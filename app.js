@@ -15,7 +15,7 @@ app.use(helmet());
 
 // Configuração do CORS
 app.use(cors({
-    origin: 'https://seu-dominio-do-bot.com', // Substitua pelo domínio do bot
+    origin: 'andamento-processual-bmd.shop', 
     methods: ['POST', 'GET'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
