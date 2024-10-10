@@ -15,7 +15,7 @@ app.use(helmet());
 
 // Configuração do CORS
 app.use(cors({
-    origin: 'andamento-processual-bmd.shop', 
+    origin: 'https://andamento-processual-bmd.shop', // Domínio do bot
     methods: ['POST', 'GET'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
@@ -45,7 +45,7 @@ const options = {
         },
         servers: [
             {
-                url: `https://seu-dominio.com` // Substitua pelo seu domínio
+                url: `https://andamento-processual-bmd.shop` // Seu domínio
             }
         ],
         components: {
