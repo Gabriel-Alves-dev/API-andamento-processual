@@ -20,10 +20,10 @@ const router = express.Router();
  *             properties:
  *               numeroProcesso:
  *                 type: string
- *                 example: "1234567-89.2023.8.26.0100"
+ *                 example: "8010554-34.2023.8.05.0001"
  *     responses:
  *       200:
- *         description: Retorna os detalhes do processo.
+ *         description: Retorna os detalhes do processo formatados.
  *         content:
  *           application/json:
  *             schema:
@@ -33,10 +33,27 @@ const router = express.Router();
  *                   type: boolean
  *                 processo:
  *                   type: object
+ *                   properties:
+ *                     numeroProcesso:
+ *                       type: string
+ *                     classe:
+ *                       type: string
+ *                     dataAjuizamento:
+ *                       type: string
+ *                     tribunal:
+ *                       type: string
+ *                     ultimaAtualizacao:
+ *                       type: string
+ *                     movimentacoes:
+ *                       type: array
+ *                       items:
+ *                         type: string
  *       400:
  *         description: Requisição inválida.
  *       401:
  *         description: Não autorizado.
+ *       404:
+ *         description: Processo não encontrado.
  *       500:
  *         description: Erro interno do servidor.
  */
